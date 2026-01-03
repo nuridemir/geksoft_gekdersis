@@ -36,12 +36,12 @@
 
   <header class="pt-32 pb-20 px-4 text-center bg-gradient-to-b from-emerald-50 to-slate-50">
     <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6">Derneğinize Güç Katacak Paketler</h1>
-    <p class="text-lg text-slate-500 max-w-2xl mx-auto mb-10">Gizli maliyet yok. Kurulum ücreti yok. İhtiyacınıza en
-      uygun planı seçin ve hemen başlayın.</p>
+    <p class="text-lg text-slate-500 max-w-2xl mx-auto mb-10">Temel paketimiz bile piyasadaki en kapsamlı çözümlerden
+      biridir.</p>
   </header>
 
 
-  <section id="fiyatlar" class="pb-20 px-4" x-data="{ billing: 'yillik' }">
+  <section id="paketler" class="pb-20 px-4" x-data="{ billing: 'yillik' }">
     <div class="max-w-7xl mx-auto text-center">
 
       <div class="flex justify-center items-center mb-16 space-x-4">
@@ -62,12 +62,12 @@
         </span>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
 
         <div
           class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition duration-300 relative group">
           <h3 class="text-xl font-bold text-slate-900">Temel Paket</h3>
-          <p class="text-sm text-slate-500 mt-2">Yeni kurulan ve küçük ölçekli dernekler için.</p>
+          <p class="text-sm text-slate-500 mt-2">Küçük ve orta ölçekli STK'lar için eksiksiz dijital dönüşüm.</p>
 
           <div class="my-8">
             <div class="flex justify-center items-end gap-1">
@@ -83,24 +83,59 @@
             class="block w-full py-3 bg-emerald-50 text-emerald-700 font-bold rounded-xl hover:bg-emerald-100 transition border border-emerald-100">Planı
             Seç</a>
 
-          <ul class="mt-8 space-y-4 text-left text-sm text-slate-600">
-            <li class="flex items-center"><svg class="w-5 h-5 text-emerald-500 mr-3" fill="none" stroke="currentColor"
-                viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg> Kurumsal Web Sitesi</li>
-            <li class="flex items-center"><svg class="w-5 h-5 text-emerald-500 mr-3" fill="none" stroke="currentColor"
-                viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg> Online Bağış Alma</li>
-            <li class="flex items-center"><svg class="w-5 h-5 text-emerald-500 mr-3" fill="none" stroke="currentColor"
-                viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg> 3 Dil Desteği</li>
-            <li class="flex items-center text-slate-400 line-through decoration-slate-300"><svg
-                class="w-5 h-5 text-slate-300 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-              </svg> E-Ticaret Modülü</li>
-          </ul>
+          <div class="mt-4 space-y-4 text-left text-sm">
+            <div class="mb-4">
+              <h4
+                class="font-bold text-slate-800 mb-2 flex items-center text-xs uppercase tracking-wider text-emerald-600">
+                <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full mr-2"></span> Web & CMS
+              </h4>
+              <ul class="space-y-2 text-slate-600">
+                <li class="flex items-start"><span class="text-emerald-500 mr-2">✓</span> Gelişmiş İçerik Yönetimi</li>
+                <li class="flex items-start"><span class="text-emerald-500 mr-2">✓</span> Sayfa Yapılandırma & Blog</li>
+                <li class="flex items-start"><span class="text-emerald-500 mr-2">✓</span> Resim Galerileri & Slider</li>
+                <li class="flex items-start"><span class="text-emerald-500 mr-2">✓</span> Sık Sorulan Sorular (SSS)</li>
+                <li class="flex items-start"><span class="text-emerald-500 mr-2">✓</span>
+                  <strong>3 Adet Hazır
+                    Tasarım</strong>
+                </li>
+              </ul>
+            </div>
+            <div class="h-px bg-slate-100 my-4"></div>
+
+            <div class="mb-4">
+              <h4
+                class="font-bold text-slate-800 mb-2 flex items-center text-xs uppercase tracking-wider text-emerald-600">
+                <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full mr-2"></span> Finans & Fon
+              </h4>
+              <ul class="space-y-2 text-slate-600">
+                <li class="flex items-start"><span class="text-emerald-500 mr-2">✓</span> Bağış & Aidat Toplama</li>
+                <li class="flex items-start"><span class="text-emerald-500 mr-2">✓</span> <strong>Fonlar Yönetimi &
+                    Fonlar Arası
+                    Aktarım</strong></li>
+                <li class="flex items-start"><span class="text-emerald-500 mr-2">✓</span> Gelişmiş Yardım Fonları</li>
+                <li class="flex items-start"><span class="text-emerald-500 mr-2">✓</span> Kampanya Yönetimi</li>
+                <li class="flex items-start"><span class="text-emerald-500 mr-2">✓</span> Detaylı Raporlama</li>
+              </ul>
+            </div>
+            <div class="h-px bg-slate-100 my-4"></div>
+
+            <div class="mb-4">
+              <h4
+                class="font-bold text-slate-800 mb-2 flex items-center text-xs uppercase tracking-wider text-emerald-600">
+                <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full mr-2"></span> İletişim & Global
+              </h4>
+              <ul class="space-y-2 text-slate-600">
+                <li class="flex items-start"><span class="text-emerald-500 mr-2">✓</span> <strong>Çoklu Dil
+                    Desteği</strong></li>
+                <li class="flex items-start"><span class="text-emerald-500 mr-2">✓</span> Gönüllü Üye Yönetimi</li>
+                <li class="flex items-start"><span class="text-emerald-500 mr-2">✓</span> E-Bülten Sistemi & Haberler
+                </li>
+                <li class="flex items-start"><span class="text-emerald-500 mr-2">✓</span> Özelleştirilebilir E-Kartlar
+                </li>
+                <li class="flex items-start"><span class="text-emerald-500 mr-2">✓</span> Gönderilen Form Verileri</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div
@@ -126,17 +161,26 @@
             class="block w-full py-4 bg-emerald-600 text-white font-bold rounded-xl hover:bg-emerald-500 transition shadow-lg shadow-emerald-900/50">Hemen
             Başla</a>
 
-          <p class="mt-8 text-xs font-bold text-slate-400 uppercase tracking-widest text-left">TEMEL PAKETE EK:</p>
+          <div class="my-4 text-center">
+            <span class="inline-block bg-slate-700 text-slate-300 px-3 py-1 rounded-full text-xs font-semibold">Tüm
+              Temel Paket Özellikleri +</span>
+          </div>
+
           <ul class="mt-4 space-y-4 text-left text-sm text-slate-300">
             <li class="flex items-center">
               <div
                 class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mr-3 text-xs">
-                ✓</div> <strong>E-Ticaret & Ürün Satışı</strong>
+                ✓</div> <strong>Ürün Satış Modülü (E-Store)</strong>
             </li>
             <li class="flex items-center">
               <div
                 class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mr-3 text-xs">
-                ✓</div> <strong>Biletli Etkinlik Yönetimi</strong>
+                ✓</div> <strong>Biletli Etkinlik Satışı</strong>
+            </li>
+            <li class="flex items-center">
+              <div
+                class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mr-3 text-xs">
+                ✓</div> <strong>Çoklu Para Birimi (Döviz)</strong>
             </li>
             <li class="flex items-center">
               <div
@@ -146,13 +190,14 @@
             <li class="flex items-center">
               <div
                 class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mr-3 text-xs">
-                ✓</div> Sınırsız Dil Desteği
+                ✓</div> Evrak & Belge Yönetimi
             </li>
           </ul>
         </div>
 
         <div
-          class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition duration-300 relative group">
+          class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition duration-300 relative group overflow-hidden">
+          <div class="absolute top-0 right-0 w-20 h-20 bg-emerald-500 opacity-20 rounded-bl-full"></div>
           <h3 class="text-xl font-bold text-slate-900">Premium Paket</h3>
           <p class="text-sm text-slate-500 mt-2">Federasyonlar ve özel ihtiyaçlar için.</p>
 
@@ -165,29 +210,52 @@
             class="block w-full py-3 bg-white text-slate-700 font-bold rounded-xl hover:bg-slate-50 transition border-2 border-slate-200">İletişime
             Geç</a>
 
-          <ul class="mt-8 space-y-4 text-left text-sm text-slate-600">
-            <li class="flex items-center"><svg class="w-5 h-5 text-slate-800 mr-3" fill="none" stroke="currentColor"
-                viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg> Özel Mobil Uygulama (iOS/Android)</li>
-            <li class="flex items-center"><svg class="w-5 h-5 text-slate-800 mr-3" fill="none" stroke="currentColor"
-                viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg> Özel Tasarım Arayüz</li>
-            <li class="flex items-center"><svg class="w-5 h-5 text-slate-800 mr-3" fill="none" stroke="currentColor"
-                viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg> Online Toplantı Modülü</li>
-            <li class="flex items-center"><svg class="w-5 h-5 text-slate-800 mr-3" fill="none" stroke="currentColor"
-                viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg> Kendi Sunucunuza Kurulum</li>
-          </ul>
+          <div class="my-4 text-center">
+            <span
+              class="inline-block bg-emerald-100 border-emerald-200 text-emerald-800 px-3 py-1 rounded-full text-xs font-semibold">Tüm
+              Standart Paket Özellikleri +</span>
+          </div>
+
+          <div class="mt-4 space-y-4 text-left text-sm">
+            <div class="mb-4">
+              <!-- <h4
+                class="font-bold text-slate-800 mb-2 flex items-center text-xs uppercase tracking-wider text-emerald-600">
+                <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full mr-2"></span> Web & CMS
+              </h4> -->
+              <ul class="space-y-2 text-slate-600">
+                <li class="flex items-start"><span class="text-emerald-500 mr-2">★</span> <strong>İleri Seviye
+                    İşbirliği</strong></li>
+                <li class="flex items-start"><span class="text-emerald-500 mr-2">✓</span> Üyeler Arası Dosya Paylaşımı
+                </li>
+                <li class="flex items-start"><span class="text-emerald-500 mr-2">✓</span> Online Toplantı Modülü</li>
+                <li class="flex items-start"><span class="text-emerald-500 mr-2">✓</span> Haritada Canlı Konum Bilgisi
+                </li>
+              </ul>
+            </div>
+            <div class="h-px bg-slate-100 my-4"></div>
+            <div class="mb-4">
+              <!-- <h4
+                class="font-bold text-slate-800 mb-2 flex items-center text-xs uppercase tracking-wider text-emerald-600">
+                <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full mr-2"></span> Web & CMS
+              </h4> -->
+              <ul class="space-y-2 text-slate-600">
+                <li class="flex items-start"><span class="text-emerald-500 mr-2">★</span> <strong>Özel
+                    Hizmetler</strong></li>
+                <li class="flex items-start"><span class="text-emerald-500 mr-2">✓</span> İsteğe Bağlı Özel Modül
+                  Geliştirme
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
         </div>
 
       </div>
     </div>
   </section>
+
+
 
   <section id="detayli-tablo" class="py-20 bg-white border-t border-slate-100">
     <div class="max-w-7xl mx-auto px-4">
@@ -212,8 +280,28 @@
               <td colspan="4" class="p-3 bg-slate-100 font-bold text-slate-600 text-xs uppercase tracking-widest pl-6">
                 Yönetim & CMS</td>
             </tr>
+
             <tr class="hover:bg-slate-50/50">
-              <td class="p-4 pl-6 font-medium text-slate-700">İçerik Yönetimi (Blog/Haber)</td>
+              <td class="p-4 pl-6 font-medium text-slate-700">Gelişmiş İçerik Yönetimi</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+              <td class="p-4 text-center text-emerald-600 bg-emerald-50/30 border-x border-emerald-50">✓</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+            </tr>
+
+            <tr class="hover:bg-slate-50/50">
+              <td class="p-4 pl-6 font-medium text-slate-700">Sayfa Yapılandırma & Blog</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+              <td class="p-4 text-center text-emerald-600 bg-emerald-50/30 border-x border-emerald-50">✓</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+            </tr>
+            <tr class="hover:bg-slate-50/50">
+              <td class="p-4 pl-6 font-medium text-slate-700">Resim Galerileri & Slider</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+              <td class="p-4 text-center text-emerald-600 bg-emerald-50/30 border-x border-emerald-50">✓</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+            </tr>
+            <tr class="hover:bg-slate-50/50">
+              <td class="p-4 pl-6 font-medium text-slate-700">Sık Sorulan Sorular (SSS)</td>
               <td class="p-4 text-center text-emerald-600">✓</td>
               <td class="p-4 text-center text-emerald-600 bg-emerald-50/30 border-x border-emerald-50">✓</td>
               <td class="p-4 text-center text-emerald-600">✓</td>
@@ -221,18 +309,65 @@
             <tr class="hover:bg-slate-50/50">
               <td class="p-4 pl-6 font-medium text-slate-700">Hazır Tasarım Temaları</td>
               <td class="p-4 text-center text-slate-600">3 Adet</td>
-              <td class="p-4 text-center text-slate-800 font-bold bg-emerald-50/30 border-x border-emerald-50">5 Adet
+              <td class="p-4 text-center text-slate-800 bg-emerald-50/30 border-x border-emerald-50">3 Adet
               </td>
-              <td class="p-4 text-center text-slate-600">Sınırsız / Özel</td>
+              <td class="p-4 text-center text-slate-600">Özel</td>
             </tr>
+
+
+
 
             <tr>
               <td colspan="4" class="p-3 bg-slate-100 font-bold text-slate-600 text-xs uppercase tracking-widest pl-6">
                 Finansal Modüller</td>
             </tr>
+
             <tr class="hover:bg-slate-50/50">
-              <td class="p-4 pl-6 font-medium text-slate-700">Fonlar Arası Aktarım</td>
+              <td class="p-4 pl-6 font-medium text-slate-700">Zekat & Adak-Akika Bağışı & Hisseli kurban
+                Özelleştirilebilir Bağış modülü</td>
               <td class="p-4 text-center text-emerald-600">✓</td>
+              <td class="p-4 text-center text-emerald-600 bg-emerald-50/30 border-x border-emerald-50">✓</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+            </tr>
+            <tr class="hover:bg-slate-50/50">
+              <td class="p-4 pl-6 font-medium text-slate-700">Zekat Hesaplayıcı</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+              <td class="p-4 text-center text-emerald-600 bg-emerald-50/30 border-x border-emerald-50">✓</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+            </tr>
+            <tr class="hover:bg-slate-50/50">
+              <td class="p-4 pl-6 font-medium text-slate-700">Aidat Toplama</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+              <td class="p-4 text-center text-emerald-600 bg-emerald-50/30 border-x border-emerald-50">✓</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+            </tr>
+            <tr class="hover:bg-slate-50/50">
+              <td class="p-4 pl-6 font-medium text-slate-700">Kampanya Yönetimi</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+              <td class="p-4 text-center text-emerald-600 bg-emerald-50/30 border-x border-emerald-50">✓</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+            </tr>
+            <tr class="hover:bg-slate-50/50">
+              <td class="p-4 pl-6 font-medium text-slate-700">Gelişmiş Yardım Fonları</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+              <td class="p-4 text-center text-emerald-600 bg-emerald-50/30 border-x border-emerald-50">✓</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+            </tr>
+            <tr class="hover:bg-slate-50/50">
+              <td class="p-4 pl-6 font-medium text-slate-700">Fon Yönetimi & Fonlar Arası Aktarım</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+              <td class="p-4 text-center text-emerald-600 bg-emerald-50/30 border-x border-emerald-50">✓</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+            </tr>
+            <tr class="hover:bg-slate-50/50">
+              <td class="p-4 pl-6 font-medium text-slate-700">Ürün Satış Modülü (E-Store)</td>
+              <td class="p-4 text-center text-slate-300">-</td>
+              <td class="p-4 text-center text-emerald-600 bg-emerald-50/30 border-x border-emerald-50">✓</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+            </tr>
+            <tr class="hover:bg-slate-50/50">
+              <td class="p-4 pl-6 font-medium text-slate-700">Biletli Etkinlik Satışı</td>
+              <td class="p-4 text-center text-slate-300">-</td>
               <td class="p-4 text-center text-emerald-600 bg-emerald-50/30 border-x border-emerald-50">✓</td>
               <td class="p-4 text-center text-emerald-600">✓</td>
             </tr>
@@ -242,12 +377,44 @@
               <td class="p-4 text-center text-emerald-600 bg-emerald-50/30 border-x border-emerald-50">✓</td>
               <td class="p-4 text-center text-emerald-600">✓</td>
             </tr>
+
+            <tr>
+              <td colspan="4" class="p-3 bg-slate-100 font-bold text-slate-600 text-xs uppercase tracking-widest pl-6">
+                İletişim Global</td>
+            </tr>
             <tr class="hover:bg-slate-50/50">
-              <td class="p-4 pl-6 font-medium text-slate-700">E-Store (Ürün Satışı)</td>
-              <td class="p-4 text-center text-slate-300">-</td>
+              <td class="p-4 pl-6 font-medium text-slate-700">Çoklu Dil Desteği</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
               <td class="p-4 text-center text-emerald-600 bg-emerald-50/30 border-x border-emerald-50">✓</td>
               <td class="p-4 text-center text-emerald-600">✓</td>
             </tr>
+
+            <tr class="hover:bg-slate-50/50">
+              <td class="p-4 pl-6 font-medium text-slate-700">E-Bülten Sistemi & Haberler</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+              <td class="p-4 text-center text-emerald-600 bg-emerald-50/30 border-x border-emerald-50">✓</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+            </tr>
+            <tr class="hover:bg-slate-50/50">
+              <td class="p-4 pl-6 font-medium text-slate-700">Özelleştirilebilir E-Kartlar</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+              <td class="p-4 text-center text-emerald-600 bg-emerald-50/30 border-x border-emerald-50">✓</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+            </tr>
+            <tr class="hover:bg-slate-50/50">
+              <td class="p-4 pl-6 font-medium text-slate-700">Detaylı Raporlama</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+              <td class="p-4 text-center text-emerald-600 bg-emerald-50/30 border-x border-emerald-50">✓</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+            </tr>
+
+            <tr class="hover:bg-slate-50/50">
+              <td class="p-4 pl-6 font-medium text-slate-700">Gönderilen Form Verileri</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+              <td class="p-4 text-center text-emerald-600 bg-emerald-50/30 border-x border-emerald-50">✓</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+            </tr>
+
 
             <tr>
               <td colspan="4" class="p-3 bg-slate-100 font-bold text-slate-600 text-xs uppercase tracking-widest pl-6">
@@ -255,12 +422,38 @@
             </tr>
             <tr class="hover:bg-slate-50/50">
               <td class="p-4 pl-6 font-medium text-slate-700">Saha Yönetim Sistemi</td>
-              <td class="p-4 text-center text-slate-300">-</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
               <td class="p-4 text-center text-emerald-600 bg-emerald-50/30 border-x border-emerald-50">✓</td>
               <td class="p-4 text-center text-emerald-600">✓</td>
             </tr>
             <tr class="hover:bg-slate-50/50">
-              <td class="p-4 pl-6 font-medium text-slate-700">Haritada Canlı Konum</td>
+              <td class="p-4 pl-6 font-medium text-slate-700">Evrak & Belge Yönetimi</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+              <td class="p-4 text-center text-emerald-600 bg-emerald-50/30 border-x border-emerald-50">✓</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+            </tr>
+            <tr class="hover:bg-slate-50/50">
+              <td class="p-4 pl-6 font-medium text-slate-700">Gönüllü Üye Yönetimi</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+              <td class="p-4 text-center text-emerald-600 bg-emerald-50/30 border-x border-emerald-50">✓</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+            </tr>
+            <tr class="hover:bg-slate-50/50">
+              <td class="p-4 pl-6 font-medium text-slate-700">Üyeler Arası Dosya Paylaşımı</td>
+              <td class="p-4 text-center text-slate-300">-</td>
+              <td class="p-4 text-center text-slate-300 bg-emerald-50/30 border-x border-emerald-50">-</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+            </tr>
+            <tr class="hover:bg-slate-50/50">
+              <td class="p-4 pl-6 font-medium text-slate-700">Online Toplantı Modülü
+              </td>
+              <td class="p-4 text-center text-slate-300">-</td>
+              <td class="p-4 text-center text-slate-300 bg-emerald-50/30 border-x border-emerald-50">-</td>
+              <td class="p-4 text-center text-emerald-600">✓</td>
+            </tr>
+            <tr class="hover:bg-slate-50/50">
+              <td class="p-4 pl-6 font-medium text-slate-700">Haritada Canlı Konum Bilgisi
+              </td>
               <td class="p-4 text-center text-slate-300">-</td>
               <td class="p-4 text-center text-slate-300 bg-emerald-50/30 border-x border-emerald-50">-</td>
               <td class="p-4 text-center text-emerald-600">✓</td>
