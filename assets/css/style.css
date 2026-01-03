@@ -1,0 +1,43 @@
+/* Logo */
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf")
+    format("truetype-variations");
+  font-weight: 1 999;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth,wght.ttf")
+    format("truetype-variations");
+  font-style: italic;
+  font-weight: 1 999;
+}
+.logotype {
+  font-family: "Open Sans", serif;
+  font-weight: 900;
+  letter-spacing: -0.08em;
+  text-transform: lowercase !important;
+}
+/* //Logo */
+
+body {
+  font-family: "Open Sans", serif;
+}
+
+/* İnce scrollbar tasarımı */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
